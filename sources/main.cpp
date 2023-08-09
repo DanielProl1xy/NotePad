@@ -1,4 +1,4 @@
-#include "notepadwindow.h"
+#include "headers/notepadwindow.h"
 
 #include <QApplication>
 

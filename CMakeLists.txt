@@ -4,7 +4,7 @@ project(qtNotePad VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOUIC OFF)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
@@ -15,16 +15,16 @@ find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
 set(PROJECT_SOURCES
-        main.cpp
-        notepadwindow.cpp
-        notepadwindow.h
-        notepadwindow.ui
-        notepadfile.cpp
-        notepadfile.h
-        closedialog.cpp
-        closedialog.h
-        filestreeview.h
-        filestreeview.cpp
+        ${PROJECT_SOURCE_DIR}/sources/main.cpp
+	${PROJECT_SOURCE_DIR}/notepadwindow.ui
+	${PROJECT_SOURCE_DIR}/sources/notepadwindow.cpp
+	${PROJECT_SOURCE_DIR}/headers/notepadwindow.h
+	${PROJECT_SOURCE_DIR}/sources/notepadfile.cpp
+	${PROJECT_SOURCE_DIR}/headers/notepadfile.h
+	${PROJECT_SOURCE_DIR}/sources/closedialog.cpp
+	${PROJECT_SOURCE_DIR}/headers/closedialog.h
+	${PROJECT_SOURCE_DIR}/headers/filestreeview.h
+	${PROJECT_SOURCE_DIR}/sources/filestreeview.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

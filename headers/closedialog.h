@@ -7,7 +7,6 @@
 #include <QFormLayout>
 #include <QGroupBox>
 
-
 QT_BEGIN_NAMESPACE
 namespace Ui { class CloseDialog; }
 QT_END_NAMESPACE

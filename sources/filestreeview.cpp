@@ -1,4 +1,4 @@
-#include "filestreeview.h"
+#include "headers/filestreeview.h"
 
 FileTreeItem::FileTreeItem(NotePadFile *file)
     : QStandardItem(file->GetName())

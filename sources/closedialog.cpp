@@ -1,4 +1,4 @@
-#include "closedialog.h"
+#include "headers/closedialog.h"
 
 CloseDialog::CloseDialog(QWidget *parent) : QDialog(parent)
 {

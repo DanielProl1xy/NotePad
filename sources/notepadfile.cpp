@@ -1,4 +1,4 @@
-#include "notepadfile.h"
+#include "headers/notepadfile.h"
 
 NotePadFile::NotePadFile(QUrl path)
 {
